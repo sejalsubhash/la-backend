@@ -1,0 +1,35 @@
+{
+  "name": "legal-audit-backend",
+  "version": "1.1.0",
+  "description": "Legal Audit Platform API Server - Enhanced for Large PDFs",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "worker": "node src/workers/documentWorker.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.997.0",
+    "@aws-sdk/client-lambda": "^3.525.0",
+    "@aws-sdk/client-s3": "^3.525.0",
+    "@aws-sdk/client-secrets-manager": "^3.525.0",
+    "@aws-sdk/lib-storage": "^3.525.0",
+    "@aws-sdk/s3-request-presigner": "^3.525.0",
+    "adm-zip": "^0.5.10",
+    "bullmq": "^5.1.0",
+    "busboy": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "unzipper": "^0.12.3",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
